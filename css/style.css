@@ -1,20 +1,21 @@
- .firstdiv h2{
- 	display: inline-block;
+header{
+	display: flex;
+	justify-content: space-between;
+	height: 250px;
+	overflow: hidden;
+}
+.firstdiv h2{
 	font-size: 32px;
 	color: #3D37F1;
-	margin-top: 82px;
-	margin-left: 300px;
-	margin-right: 115px;
+	margin-top: 70px;
+	margin-left: 20%;
 	font-family: "Latoo";
 }
-.firstdiv {
-	display: inline-block;
-}
-.navigation{
-	display: inline-block;
+.firstdiv{
+	width: 40%;
 }
 .navigation a{
-	 color: white;
+	color: white;
 	text-transform: uppercase;
 	font-size: 20px;
 	vertical-align: middle;
@@ -39,20 +40,23 @@
 	display: inline-block;
 	margin-top: 82px;
 }
+.banner-sec{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10%;
+}
 .banner-sec .banner-text{
-	display: inline-block;
-	margin-right: 70px;
-	margin-left: 18%;
 	vertical-align: top;
 	margin-top: 290px;
+	width: 40%;
 }
 .banner-sec h1{
-	font-size: 78px;
+	font-size: 48px;
 	color: #534D4D;
 	font-family: "Lat";
 }
 .banner-sec p{
-	font-size: 22px;
+	font-size: 20px;
 	margin-bottom: 82px;
 	margin-top: 42px;
 	color: #534D4D;
@@ -61,12 +65,16 @@
 .banner-sec .img{
 	display: inline-block;
 	margin-top: 260px;
+	width: 50%;
+}
+.banner-sec .img img{
+	width: 100%;
 }
 .banner-text a{
 	color: white;
 	font-size: 23px;
 	background-color: #3D37F1;
-	padding: 28px 68px;
+	padding: 20px 60px;
 	border-radius: 50px;
 	font-family: "Poppins1"
 } 
@@ -214,17 +222,15 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
 .second .Ui img{
-	display: inline-block;
-	margin-top: 300px;
-	margin-left: 215px;
-	margin-bottom: 205px;
+	width: 100%;
 }
 .second .textclass{
-	margin-top: 430px;
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 130px;
+	margin-top: 50px;
+	width: 45%;
 }
 .second .textclass h6{
 	font-size: 22px;
@@ -240,23 +246,32 @@
 .video article{
 	display: inline-block;
 }
+.Ui{
+	width: 50%;
+}
+.chemikai{
+	width: 40%;
+}
 .second div{
 	display: inline-block;
 }
 .second .video {
-	margin-left: -445px;
+	margin-top: 20px;
 	vertical-align: top;
-	margin-top: 570px;
 }
 .second .video p{
 	font-size: 18px;
 	color: #686868;
 	margin-left: 25px;
 }
+.second{
+	display: flex;
+	padding: 10%;
+	justify-content: space-between;
+}
 .portfolio .works{
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 20%;
 	margin-right: 110px;
 	margin-top: 150px;
 }
@@ -296,12 +311,16 @@
 .portfolio .pictures img{
 	width: 370px;
 	height: 279px;
-	margin-right: 45px;
 	margin-bottom: 40px;
+}
+.portfolio .pictures article .righto{
+	margin-right: 45px;
 }
 .portfolio {
 	background-color: #F8F8F8;
 	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .success .title{
 	text-align: center;
@@ -633,12 +652,14 @@
 .workflow article h6{
 	font-size: 20px;
 	color: #747474;
+	padding: 5px 0;
 	font-family: "Roboto-Regular";
 }
 .workflow article .pa{
 	font-size: 14px;
 	color: #747474;
 	font-family: "Roboto-Regular";
+	line-height: 20px;
 }
 .workflow .titlediv h5{
 	font-size: 22px;
@@ -655,7 +676,7 @@
 	display: inline-block;
 	margin-top: 250px;
 	margin-right: 60px;
-	margin-left: 17%;
+	height: 100%;
 }
 .workflow .diverti{
 	display: flex;
@@ -685,6 +706,10 @@
 .workflow .right-div article{
 	margin-right: 40px;
 }
+.workflow{
+	display: flex;
+	justify-content: center;
+}
 .blog{
 	background-color: #FBFCFD;
 	width: 100%;
@@ -702,6 +727,7 @@
 	font-size: 40px;
 	color: #5A5454;
 	font-family: "Lato"
+	padding-top:30px
 }
 .blog .centerdiv p{
 	margin-bottom: 115px;
@@ -722,17 +748,21 @@
 .blog .divdiv article h5{
 	font-size: 20px;
 	color: #5A5454;
+	padding: 10px;
 	padding-bottom: 30px;
 	font-family: "Lat"
 }
 .blog .divdiv article p{
 	font-size: 15px;
+	padding: 10px;
 	color: #747474;
 	font-family: "Roboto-Regular";
 }
 .blog .divdiv a{
 	font-size: 40px;
 	color: #3D37F1;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 .image-section{
 	text-align: center;
@@ -744,9 +774,14 @@
 }
 .footer{
 	margin-top: 280px;
-	padding-left: 20%;
+	display: flex;
+	justify-content: center;
 	background-color:#FBFCFD;
 	width: 100%;
+	padding:0 15%;
+}
+.footer div{
+	width: 20%;
 }
 .footer img{
 	background-color: #0A315A;
@@ -781,10 +816,12 @@
 	margin-bottom: 45px;
 	font-family: "Roboto-Regular"
 }
+.footer .footerdiv1{
+	margin-right: 40px;
+}
 .footer div{
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 180px;
 }
 .footer div h4{
 	font-size: 24px;
@@ -797,4 +834,9 @@
 	color: #4B647E;
 	margin-bottom: 30px;
 	font-family: "Roboto-Regular"
+}
+footer .footer-chemikai{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
 }
